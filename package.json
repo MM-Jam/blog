@@ -1,0 +1,23 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MM-Jam/blog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MM-Jam/blog/issues"
+  },
+  "homepage": "https://github.com/MM-Jam/blog#readme",
+  "dependencies": {
+    "element-ui": "^2.15.2",
+    "express": "^4.17.1"
+  }
+}
