@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 2628228 */
+  src: url('iconfont.woff2?t=1624429850175') format('woff2'),
+       url('iconfont.woff?t=1624429850175') format('woff'),
+       url('iconfont.ttf?t=1624429850175') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-home:before {
+  content: "\e6e8";
+}
+
+.icon-js:before {
+  content: "\e63b";
+}
+
+.icon-react:before {
+  content: "\e689";
+}
+
+.icon-vue:before {
+  content: "\e6b9";
+}
+
