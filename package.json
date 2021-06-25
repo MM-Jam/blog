@@ -17,7 +17,9 @@
   },
   "homepage": "https://github.com/MM-Jam/blog#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "element-ui": "^2.15.2",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mysql": "^2.18.1"
   }
 }

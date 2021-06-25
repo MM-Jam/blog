@@ -3,6 +3,8 @@ import Router from 'vue-router'
 import PartJS from '@/components/PartJS'
 import Home from '@/components/Home'
 import ShowArticle from '@/components/ShowArticle'
+import PartReact from '@/components/PartReact'
+import PartVue from '@/components/PartVue'
 
 Vue.use(Router)
 
@@ -18,16 +20,16 @@ export default new Router({
       name: 'JS',
       component: PartJS
     },
-    // {
-    //   path: '/React',
-    //   name: 'React',
-    //   component: PartReact
-    // },
-    // {
-    //   path: '/Vue',
-    //   name: 'Vue',
-    //   component: PartVue
-    // },
+    {
+      path: '/React',
+      name: 'React',
+      component: PartReact
+    },
+    {
+      path: '/Vue',
+      name: 'Vue',
+      component: PartVue
+    },
     {
       path: '/article/:id',
       name: 'Article',

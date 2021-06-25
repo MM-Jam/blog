@@ -15,19 +15,19 @@
               </router-link>
             </li>
             <li class="js">
-              <router-link to='/js'>
+              <router-link to='/JS'>
                 <i class="iconfont icon-js"></i>
                 <span>JS</span>
               </router-link>
             </li>
             <li class="react">
-              <router-link to="/react">
+              <router-link to="/React">
                 <i class="iconfont icon-react"></i>
                 <span>React</span>
               </router-link>
             </li>
             <li class="vue">
-              <router-link to='/vue'>
+              <router-link to='/Vue'>
                 <i class="iconfont icon-vue"></i>
                 <span>Vue</span>
               </router-link>
