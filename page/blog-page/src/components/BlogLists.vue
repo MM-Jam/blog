@@ -6,17 +6,19 @@
                 <router-link :to="{path:'/article/'+item.id}">
                     <div class="item-title">{{ item.title }}</div>
                 </router-link>
-                <div class="item-utime">发布于 {{ item.utime }}</div>
+                <div class="item-utime">发布于 {{ item.ctime }}</div>
               </div>
                 <router-link :to="{path:'/article/'+item.id}">
                     <p>{{ item.introduction }}</p>
                 </router-link>
-                <router-link :to="{path:'/'+item.tag}">
+                <div class="item-aside">
+                  <router-link :to="{path:'/'+item.tag}">
                     <span class="item-tag">【{{ item.tag }}】</span>
-                </router-link>
-                <router-link :to="{path:'/article/'+item.id}">
-                    <span class="item-all">阅读全文</span>
-                </router-link>
+                  </router-link>
+                  <router-link :to="{path:'/article/'+item.id}">
+                      <span class="item-all">阅读全文</span>
+                  </router-link>
+                </div>
           </div>
       </div>
   </div>

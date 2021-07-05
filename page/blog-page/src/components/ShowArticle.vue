@@ -1,6 +1,6 @@
 <template>
   <div class="article">
-    <h1>{{ articleInfo.title }}</h1>
+    <div class="article-title">{{ articleInfo.title }}</div>
     <div class="article-aside">
         <span>发布日期：{{articleInfo.ctime}}</span><span>更新日期：{{articleInfo.utime}}</span>
         <span>分类：
@@ -11,23 +11,28 @@
     </div>
     <div class="article-content">
         <div class="md-body">
-            {{articleInfo.content}}
+            <vue-markdown :source="mdContent" class="markdown-body"/>
         </div>
     </div>
-    <div class="article-over">完</div>
   </div>
 </template>
 
 <script>
 import axios from 'axios'
+import VueMarkdown from 'vue-markdown'
+import 'github-markdown-css/github-markdown.css'
 export default {
   props: ['article'],
   name: 'ShowArtlcle',
   data () {
     return {
       articleInfo: {},
-      contentUrl: ''
+      contentUrl: '',
+      mdContent: ''
     }
+  },
+  components: {
+    VueMarkdown
   },
   created () {
     console.log(this.$route.params.id)
@@ -37,10 +42,11 @@ export default {
         id: this.$route.params.id
       }
     }).then(res => {
-      // console.log(res)
+      this.articleInfo = res.data.data[0]
       this.contentUrl = res.data.data[0].content
       axios.get(this.contentUrl).then(res => {
-        console.log('c', res)
+        this.mdContent = res.data
+        console.log(this.mdContent)
       })
     })
   }

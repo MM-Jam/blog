@@ -18,11 +18,9 @@ export default {
     BlogLists
   },
   created () {
-    console.log('ccc')
     axios.get('/queryAllBlogs', {
       baseURL: 'http://localhost:5000'
     }).then(res => {
-      console.log(res)
       this.blogLists = res.data.data
     }).catch(err => {
       console.log(err)

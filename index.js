@@ -7,7 +7,8 @@ app.use(express.static('./page/blog-page'));
 app.use(cors())
 
 app.get('/queryAllBlogs',loader.get('/queryAllBlogs'));
-app.get('/queryBlogById',loader.get('/queryBlogById'))
+app.get('/queryBlogById',loader.get('/queryBlogById'));
+app.get('/queryBlogsByTag',loader.get('/queryBlogsByTag'));
 
 app.listen(5000,function(){
     console.log('服务启动');

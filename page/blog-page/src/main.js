@@ -7,9 +7,11 @@ import ElementUI from 'element-ui'
 import '@/css/init.css'
 import 'element-ui/lib/theme-chalk/index.css'
 import '@/assets/icon/iconfont.css'
+import VueMarkdown from 'vue-markdown'
 
 // Vue.config.productionTip = false
 Vue.use(ElementUI)
+Vue.use(VueMarkdown)
 
 /* eslint-disable no-new */
 new Vue({
